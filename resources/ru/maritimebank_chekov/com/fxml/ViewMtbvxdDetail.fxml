@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import ru.inversion.fx.form.controls.JInvComboBox?>
+<?import ru.inversion.fx.form.controls.JInvTable?>
+<?import ru.inversion.fx.form.controls.JInvTableColumn?>
+<?import ru.inversion.fx.form.controls.JInvTableColumnDate?>
+<?import ru.inversion.fx.form.controls.JInvToolBar?>
+
+<VBox prefHeight="400.0" prefWidth="800.0" spacing="5.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.maritimebank_chekov.com.ViewMtbvxdDetailController">
+<children>
+<JInvToolBar fx:id="toolBar" />
+<JInvTable fx:id="MTBVXD_DETAIL" prefHeight="329.0" prefWidth="790.0" tableMenuButtonVisible="true" VBox.vgrow="ALWAYS">
+<columns>
+<JInvTableColumn fx:id="DOCUMENTID" fieldName="DOCUMENTID" text="%DOCUMENTID" />
+<JInvTableColumn fx:id="DOCUMENTNAME" fieldName="DOCUMENTNAME" text="%DOCUMENTNAME" />
+<JInvTableColumn fx:id="REQ_DOC_ID" fieldName="REQ_DOC_ID" text="%REQ_DOC_ID" />
+<JInvTableColumnDate fx:id="DOC_DATE" fieldName="DOC_DATE" text="%DOC_DATE" />
+<JInvTableColumn fx:id="MAC" fieldName="MAC" text="%MAC" />
+<JInvTableColumn fx:id="GLOBALID" fieldName="GLOBALID" text="%GLOBALID" />
+<JInvTableColumn fx:id="DOCBODY" fieldName="DOCBODY" text="%DOCBODY" />
+<JInvTableColumn fx:id="CPAND" fieldName="CPAND" text="%CPAND" />
+<JInvTableColumn fx:id="CPANC" fieldName="CPANC" text="%CPANC" />
+<JInvTableColumn fx:id="CXML" fieldName="CXML" text="%CXML" />
+<JInvTableColumn fx:id="CROOT" fieldName="CROOT" prefWidth="300.0" text="%CROOT" />
+<JInvTableColumn fx:id="CLIENT_INN" fieldName="CLIENT_INN" text="%CLIENT_INN" />
+<JInvTableColumn fx:id="CLIENT_SRN" fieldName="CLIENT_SRN" text="%CLIENT_SRN" />
+<JInvTableColumn fx:id="CLIENT_ID" fieldName="CLIENT_ID" text="%CLIENT_ID" />
+<JInvTableColumn fx:id="ACCOUNT" fieldName="ACCOUNT" text="%ACCOUNT" />
+<JInvTableColumn fx:id="NAME" fieldName="NAME" prefWidth="300.0" text="%NAMES" />
+<JInvTableColumn fx:id="VALUE" fieldName="VALUE" prefWidth="300.0" text="%VALUE1" />
+<JInvTableColumn fx:id="STATE" fieldName="STATE" text="%STATE" />
+<JInvTableColumn fx:id="S_COMMENT" fieldName="S_COMMENT" prefWidth="300.0" text="%S_COMMENT" />
+</columns>
+<VBox.margin>
+<Insets bottom="5.0" left="5.0" right="5.0" />
+</VBox.margin>
+</JInvTable>
+      <AnchorPane prefHeight="90.0" prefWidth="800.0">
+         <children>
+            <Button layoutX="58.0" layoutY="69.0" mnemonicParsing="false" onAction="#reProcessing" prefHeight="25.0" prefWidth="180.0" text="Повторная обработка " />
+            <JInvComboBox fx:id="FILTER_TYPE" layoutX="58.0" layoutY="2.0" promptText="Установка фильтра по типу" />
+            <JInvComboBox fx:id="FILTER_STATUS" layoutX="58.0" layoutY="35.0" promptText="Установка фильтра по статусу" />
+         </children>
+      </AnchorPane>
+</children>
+</VBox>

@@ -1,0 +1,11 @@
+<JInvDesktop>
+    <startclass description="" name="ru.inversion.bicomp.oradev.dba.PDbaAuditTrailMain" startup="false">
+        <method description="DBA_AUDIT_TRAIL" mode="NONE">showViewDbaAuditTrail</method>
+    </startclass>
+    <startclass description="" name="ru.inversion.bicomp.oradev.profiler.PPlsqlProfilerRunMain" startup="false">
+        <method description="PL/SQL профили" mode="NONE">showViewPlsqlProfilerRuns</method>
+    </startclass>
+    <startclass description="" name="ru.inversion.bicomp.fxreport.ApMain" startup="false">
+        <method description="Альтернативная печать, внешний вызов" mode="NONE">runReport</method>
+    </startclass>
+</JInvDesktop>

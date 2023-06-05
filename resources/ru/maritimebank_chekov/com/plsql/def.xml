@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sql_expr_list>
+    <expression name="name" lang="PL/SQL">
+        <script><![CDATA[
+			BEGIN
+				 mtb.FX_DEMO_PKG.mtb_fx_demo_pkg(:paramId);
+			END;
+			]]>
+        </script>
+        <parameters>
+            <parameter name="paramId" mode="IN" javaType="Long"/>
+       </parameters>
+    </expression>
+</sql_expr_list>

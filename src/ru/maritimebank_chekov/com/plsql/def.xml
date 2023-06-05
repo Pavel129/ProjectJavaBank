@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sql_expr_list>
+    <expression name="UpdateIfiqstatus" lang="PL/SQL">
+        <script><![CDATA[
+			DECLARE
+              PID Integer :=:pID;
+              PERR VARCHAR2(200);
+              v_Return Integer := 0;
+            BEGIN
+              v_Return := MTB.DBO_FX.REVERTSTATUS(
+                PID,
+                PERR
+              );
+              :result := v_Return;
+              :err := PERR;
+            END;
+
+			]]>
+        </script>
+        <parameters>
+            <parameter name="pID" mode="IN" javaType="Long"/>
+            <parameter name="result" mode="OUT" sqlType="BIGINT" javaType="Long" />
+            <parameter name="err" mode="OUT" sqlType="VARCHAR" javaType="String" />
+        </parameters>
+    </expression>
+</sql_expr_list>

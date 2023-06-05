@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import ru.inversion.fx.form.controls.*?>
+<?import ru.inversion.fx.form.lov.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="5.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.maritimebank_chekov.com.EditMtbvxdDetailController">
+<children>
+<GridPane hgap="5.0" vgap="5.0" VBox.vgrow="ALWAYS">
+<children>
+<JInvLabel fx:id="lblDOCUMENTID" text="%DOCUMENTID" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+<JInvLongField fx:id="DOCUMENTID" maxWidth="-Infinity" prefColumnCount="0" fieldName="DOCUMENTID" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+<JInvLabel fx:id="lblDOCUMENTNAME" text="%DOCUMENTNAME" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+<JInvTextField fx:id="DOCUMENTNAME" fieldName="DOCUMENTNAME" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+<JInvLabel fx:id="lblREQ_DOC_ID" text="%REQ_DOC_ID" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+<JInvLongField fx:id="REQ_DOC_ID" maxWidth="-Infinity" prefColumnCount="0" fieldName="REQ_DOC_ID" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+<JInvLabel fx:id="lblDOC_DATE" text="%DOC_DATE" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+<JInvTextField fx:id="DOC_DATE" fieldName="DOC_DATE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+<JInvLabel fx:id="lblMAC" text="%MAC" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+<JInvTextField fx:id="MAC" fieldName="MAC" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+<JInvLabel fx:id="lblGLOBALID" text="%GLOBALID" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+<JInvTextField fx:id="GLOBALID" fieldName="GLOBALID" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+<JInvLabel fx:id="lblDOCBODY" text="%DOCBODY" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+<JInvTextField fx:id="DOCBODY" fieldName="DOCBODY" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+<JInvLabel fx:id="lblCPAND" text="%CPAND" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+<JInvTextField fx:id="CPAND" fieldName="CPAND" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+<JInvLabel fx:id="lblCPANC" text="%CPANC" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+<JInvTextField fx:id="CPANC" fieldName="CPANC" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+<JInvLabel fx:id="lblCXML" text="%CXML" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+<JInvTextField fx:id="CXML" fieldName="CXML" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+<JInvLabel fx:id="lblCROOT" text="%CROOT" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+<JInvTextField fx:id="CROOT" prefColumnCount="50" fieldName="CROOT" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+<JInvLabel fx:id="lblCLIENT_INN" text="%CLIENT_INN" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+<JInvTextField fx:id="CLIENT_INN" maxWidth="-Infinity" prefColumnCount="12" fieldName="CLIENT_INN" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+<JInvLabel fx:id="lblCLIENT_SRN" text="%CLIENT_SRN" GridPane.columnIndex="0" GridPane.rowIndex="12" />
+<JInvTextField fx:id="CLIENT_SRN" maxWidth="-Infinity" prefColumnCount="12" fieldName="CLIENT_SRN" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+<JInvLabel fx:id="lblCLIENT_ID" text="%CLIENT_ID" GridPane.columnIndex="0" GridPane.rowIndex="13" />
+<JInvLongField fx:id="CLIENT_ID" maxWidth="-Infinity" prefColumnCount="0" fieldName="CLIENT_ID" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+<JInvLabel fx:id="lblACCOUNT" text="%ACCOUNT" GridPane.columnIndex="0" GridPane.rowIndex="14" />
+<JInvTextField fx:id="ACCOUNT" fieldName="ACCOUNT" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+<JInvLabel fx:id="lblNAME" text="%NAME" GridPane.columnIndex="0" GridPane.rowIndex="15" />
+<JInvTextField fx:id="NAME" prefColumnCount="50" fieldName="NAME" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+<JInvLabel fx:id="lblVALUE" text="%VALUE" GridPane.columnIndex="0" GridPane.rowIndex="16" />
+<JInvTextField fx:id="VALUE" prefColumnCount="50" fieldName="VALUE" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+<JInvLabel fx:id="lblSTATE" text="%STATE" GridPane.columnIndex="0" GridPane.rowIndex="17" />
+<JInvTextField fx:id="STATE" fieldName="STATE" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+<JInvLabel fx:id="lblS_COMMENT" text="%S_COMMENT" GridPane.columnIndex="0" GridPane.rowIndex="18" />
+<JInvTextField fx:id="S_COMMENT" prefColumnCount="50" fieldName="S_COMMENT" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+</children>
+<columnConstraints>
+<ColumnConstraints />
+<ColumnConstraints hgrow="ALWAYS" />
+</columnConstraints>
+<VBox.margin>
+<Insets />
+</VBox.margin>
+<rowConstraints>
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints minHeight="1.0"/>
+</rowConstraints>
+</GridPane>
+<ButtonBar buttonMinWidth="80.0">
+<buttons>
+<JInvButton fx:id="btOK" text="%EDIT.OK" />
+<JInvButton fx:id="btCancel" text="%EDIT.CANCEL" />
+</buttons>
+</ButtonBar>
+</children>
+<padding>
+<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+</padding>
+</VBox>
